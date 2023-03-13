@@ -1,7 +1,7 @@
 import { createApp } from 'vue';
 import './style.css';
 import App from './App.vue';
-function f1234() {
+function f12344() {
   //todo
 }
 createApp(App).mount('#app');
