@@ -15,7 +15,10 @@
     "vue": "^3.2.45"
   },
   "lint-staged": {
-    "*.{vue,js,jsx,cjs,mjs,ts,tsx,cts,mts}": "eslint --cache --fix"
+    "src/**/*.{vue,js,jsx,cjs,mjs,ts,tsx,cts,mts}": [
+      "prettier --write",
+      "eslint --cache --fix"
+    ]
   },
   "devDependencies": {
     "@commitlint/cli": "^17.4.4",
