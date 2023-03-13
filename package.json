@@ -7,7 +7,7 @@
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
     "lint-staged": "lint-staged",
-    "prepare": "husky install", 
+    "prepare": "husky install",
     "lint": "eslint src --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix"
   },
   "dependencies": {
@@ -15,11 +15,7 @@
     "vue": "^3.2.45"
   },
   "lint-staged": {
-    "*.{js,ts,vue,jsx,tsx}": [
-      "prettier --write",
-      "eslint --cache --fix",
-      "git add"
-    ]
+    "*.{vue,js,jsx,cjs,mjs,ts,tsx,cts,mts}": "eslint --cache --fix"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.4.4",
